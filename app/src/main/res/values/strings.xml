@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fieldworker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_addUser">Add User</string>
+    <string name="action_addPost">Add New Post</string>
+    <string name="action_viewProfile">View profile</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_showUsers">Show users</string>
+
+</resources>
