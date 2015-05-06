@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_showPosts" android:title="@string/action_showPosts"
+        android:orderInCategory="100" android:showAsAction="never" />
     <item android:id="@+id/action_addPost" android:title="@string/action_addPost"
         android:orderInCategory="100" android:showAsAction="never" />
     <item android:id="@+id/action_viewProfile" android:title="@string/action_viewProfile"

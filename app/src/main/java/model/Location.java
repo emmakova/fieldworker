@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Location implements Serializable{
 
     String city, street;
-    Long lat, lng;
+    Double lat, lng;
 
     public Location() {
     }
@@ -29,19 +29,20 @@ public class Location implements Serializable{
         this.street = street;
     }
 
-    public Long getLat() {
+    public Double getLat() {
         return lat;
     }
 
-    public void setLat(Long lat) {
+    public void setLat(Double lat) {
         this.lat = lat;
     }
 
-    public Long getLng() {
+    public Double getLng() {
         return lng;
     }
 
-    public void setLng(Long lng) {
+    public void setLng(Double lng) {
         this.lng = lng;
     }
+
 }

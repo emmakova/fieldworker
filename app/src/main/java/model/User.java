@@ -17,12 +17,18 @@ public class User implements Serializable{
     public User() {
     }
 
-    public User( String id, String fName, String lName, String mail, String pass, boolean isAdmin) {
+    public User(String id, String fName, String lName, String mail, String pass, boolean isAdmin) {
         this.id = id;
         this.fName = fName;
         this.lName = lName;
         this.mail = mail;
         this.password = pass;
+        this.isAdmin = isAdmin;
+    }
+
+    public User(String fName, String lName, boolean isAdmin) {
+        this.fName = fName;
+        this.lName = lName;
         this.isAdmin = isAdmin;
     }
 
@@ -63,7 +69,7 @@ public class User implements Serializable{
     }
 
     public void setAdmin(String isAdmin) {
-        if(isAdmin == "0"){
+        if(isAdmin.equals("0")){
             this.isAdmin = false;
         } else {
             this.isAdmin = true;
@@ -76,5 +82,9 @@ public class User implements Serializable{
 
     public void setfName(String fName) {
         this.fName = fName;
+    }
+
+    public String getFullName() {
+        return this.fName + " " + this.lName;
     }
 }
